@@ -1,0 +1,841 @@
+@charset "utf-8";
+
+/*-----------------------------------------------------	*/
+/*	 スマホ用定義
+/*-----------------------------------------------------	*/
+
+@media screen and (max-width: 640px) {
+/* 基本スタイル
+=============================================== */
+
+img {
+	max-width: 100%!important;
+	height: auto;
+}
+.dn {
+	display: none;
+}
+body {
+	min-width: 100%;
+}
+.language{right: 60px; bottom: 23px;}
+.productenintro{padding: 0px 20px;}
+.productfontsizeen{font-size: 12px;}
+
+.floatright{float:left;}
+
+#main, #main.oneColumn {
+	width: 100%;
+	float: none;
+	margin: 0px;
+	padding: 30px 10px;
+	box-sizing: border-box;
+}
+#sub {
+	width: 100%;
+	float: none;
+	margin: 0px;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 10px;
+	background: #6CC1A2;
+}
+#sub #sidemenu {
+	width: 100%;
+	box-sizing: border-box;
+}
+#contents {
+	width: 100%;
+	padding: 50px 0px;
+	box-sizing: border-box;
+}
+.tbl th, .tbl td {
+	display: block;
+	width: auto;
+}
+
+/* ヘッダー
+=============================================== */
+
+#gHeader {
+	height: 60px!important;
+	background: #000;
+	z-index:100000;
+}
+#gHeader #gHeadeInner {
+width:100%;
+	height: 60px;
+}
+#gHeader h1 {
+	margin-left: 10px;
+}
+#gHeader h1 img {
+	height: 60px;
+}
+
+
+/* グローバルナビ
+=============================================== */
+
+#gHeader #gNav {
+	width: 100%!important;
+	position: absolute!important;
+	right: 0px!important;
+	top: 0px!important;
+	z-index:100000;
+}
+#gHeader #gNav ul {
+	display:none;
+	margin:0;
+	padding:0;
+	width: 100%!important;
+	position: absolute;
+	left: 0px!important;
+	top: 60px!important;
+}
+#gNav li {
+	width: 100%!important;
+	border-top: 1px solid #202020;
+}
+#gNav li+li {
+	margin: 0px!important;
+	border-top: 1px solid #202020;
+}
+#gNav li a {
+	display: block;
+	width: 100%!important;
+	background: #000!important;
+	padding: 15px 10px!important;
+	box-sizing: border-box!important;
+	border-radius: 0px!important;
+}
+#gNav li a:hover {
+	background: #937859!important;
+	color: #fff!important;
+}
+#toggle a {
+	display: block;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #999;
+	background: #000;
+}
+#toggle a:before {
+	position: absolute;
+	left: 13px;
+	top: 0px;
+	content: "\2261";
+	font-size: 50px;
+}
+#toggle  a:active,
+#toggle  a:hover {
+      color: #fff;
+}
+
+/* 共通コンタクトエリア
+=============================================== */
+
+#gContact {
+	padding: 50px 10px;
+	box-sizing: border-box;
+}
+#gContactInner {
+  	width: 100%;
+	padding:0px;
+	box-sizing: border-box;
+}
+#gContact li {
+	display: block;
+	margin: 0px;
+	padding: 0!important;
+}
+#gContact li+li {
+	margin-top:20px;
+}
+
+
+/* 共通
+=============================================== */
+
+#contents #title h2 {
+	font: normal 26px/1.4 "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	margin: 0px 0px 20px;
+}
+
+#pagetop {
+	width: 100%;
+	min-width: 100%;
+}
+#pagetop img {
+	max-width: 40%!important;
+}
+
+
+
+/* パンくずナビ
+=============================================== */
+
+#topicpath {
+	display: none;
+}
+
+/* コンテンツタイトル
+=============================================== */
+
+#cTitle {
+	min-width: 100%;
+	height: auto;
+}
+#cTitle h1 {
+	position: relative;
+	height: auto;
+	width: 100%;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	line-height: 1;
+}
+#cTitle h1 img {
+	margin: 0px;
+}
+
+/* 共通スタイル
+=============================================== */
+
+#contents #title {
+	margin: 0px 0px 40px;
+	padding: 0px 10px;
+}
+#contents #title p {
+	font-size: 14px;
+	font-style: normal;
+}
+
+
+/* お知らせ
+=============================================== */
+
+#post #infoList {
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;	
+}
+#post #infoList h2.ttl {
+	margin-bottom: 5px;
+}
+#post #infoList dt {
+	float: none;
+	padding: 20px 10px 5px;
+}
+#post #infoList dd {
+	border-bottom: 1px dotted #e4e4e4;
+	padding: 0px 10px 20px;
+}
+#post #entry{
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;	
+}
+
+
+
+/* ストーリー
+=============================================== */
+
+#story #title {
+	padding: 50px 10px 30px;
+	margin: -50px 0px 0px;
+}
+#story #chapterList {
+	margin: 0px;
+	width: 100%;
+	padding: 0;
+}
+#story #chapterList li {
+	box-sizing: border-box;
+}
+#story #chapterList li figure {
+	width: 100%;
+	height: 100px;
+	float: none!important;
+	margin: 0;
+	background-size: cover!important;
+}
+#story #chapterList li .text {
+	width: 100%;
+	height: auto;
+	padding: 25px 15px;
+	float: none!important;
+	text-align: left!important;
+}
+#story #chapterList li .text h3 {
+	margin-bottom: 10px;
+}
+#story #chapterList li .text h3 img {
+	height: 22px;
+}
+#story #chapterList li .lead {
+	display: none;
+}
+#story #chapterWrap #capTitle {
+	background: url(../../images/story_chapter01_no.png) no-repeat right bottom;
+	padding-top: 0px;
+	height: auto;
+	margin: 0px 0px 40px;
+}
+#story #chapterWrap {
+	width: 100%;
+	margin: 0px;
+	padding: 10px;	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+#story #chapterWrap .visual {
+  margin: 0px 0px 70px;
+  width:100%;
+}
+#story #chapterWrap table {
+	margin: 50px 0px 50px;
+	overflow-x: auto;
+}
+#story #chapterWrap table.marriage .text {
+	display: block;
+	padding: 0px;
+}
+#story #chapterWrap table.marriage figure {
+	display: block;
+}
+
+/* 職人紹介
+=============================================== */
+
+#craftsmanship #entrance {
+	margin: 0;
+	padding: 0;
+}
+#craftsmanship #entrance ul {
+	padding: 15px;
+	overflow: hidden;
+}
+#craftsmanship #entrance ul li {
+	border: 3px solid #FFF;
+	float: none;
+	width: 100%;
+	padding: 40px 20px;
+	box-sizing: border-box;
+}
+#craftsmanship #entrance ul li+li {
+	margin: 10px 0px 0px;
+}
+#craftsmanship #entrance ul li h3 {
+	margin: 0px 0px 20px;
+	font-size: 24px;
+}
+#craftsmanship #entrance ul li h3:after {
+	display: none;
+}
+#craftsmanship #entrance ul li p {
+	margin: 0px 0px 20px;
+}
+#craftsmanship #recruit {
+	width: 100%;
+	padding: 30px 10px 0px;
+	box-sizing: border-box;
+}
+#craftsmanship #galleryList{
+	width: 100%;
+}
+#craftsmanship .photoList{
+	width: 100%;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+#craftsmanship .photoList li{
+	margin: 0% 2% 20px;
+	width: 46%;
+}
+#craftsmanship .photoList li img{
+	width: 100%;
+}
+
+#craftsmanship #trainingWrap {
+	width: 100%;
+	margin: 0px;
+	padding: 10px;
+	height: auto;
+	box-sizing: border-box;
+}
+#craftsmanship #trainingWrap figure {
+	margin: 0px 0px 50px;
+	width: 100%;
+}
+#craftsmanship #trainingWrap .philosophy {
+	font-size: 20px;
+}
+#craftsmanship .photoList li:nth-child(3n+1) {
+	clear: none;
+}
+#craftsmanship .photoList h4 {
+  font-size: 13px;
+}
+#craftsmanship.craftsman #pageNav{
+	margin-right: 3%;
+	margin-left: 3%;
+	width: 94%;
+}
+
+
+/* メンテナンス
+=============================================== */
+
+#maintenance #entrance {
+	margin: 0;
+	padding: 0;
+}
+#maintenance #entrance ul {
+	padding: 15px;
+	overflow: hidden;
+}
+#maintenance #entrance ul li {
+	border: 3px solid #FFF;
+	float: none;
+	width: 100%;
+	padding: 40px 20px;
+	box-sizing: border-box;
+}
+#maintenance #entrance ul li+li {
+	margin: 10px 0px 0px;
+}
+#maintenance #entrance ul li h3 {
+	margin: 0px 0px 20px;
+	font-size: 24px;
+}
+#maintenance #entrance ul li h3:after {
+	display: none;
+}
+#maintenance #entrance ul li p {
+	margin: 0px 0px 20px;
+}
+
+#maintenance #maintenanceWrap {
+	width: 100%;
+	margin: 0px;
+	padding: 10px;
+	height: auto;
+	box-sizing: border-box;
+}
+#maintenance #maintenanceWrap figure {
+	margin: 50px 0px;
+	width: 100%;
+}
+#maintenance #maintenanceWrap figure:first-child {
+	margin-top: 0;
+}
+
+
+/* 会社概要
+=============================================== */
+
+#company #philosophy {
+	padding: 0 10px;
+}
+#company #philosophy h3 {
+	margin-bottom: 30px;
+}
+#company #philosophy .philosophy {
+	margin-bottom: 50px;
+}
+#company #philosophy .philosophy br {
+	display: none;
+}
+#company #philosophy .policy {
+	font-size: 15px;
+}
+#company #philosophy .policy-left {
+	font-size: 15px;
+	width: 100%;
+}
+#company #philosophy figure{
+	display: none;
+}
+#company #corpInfo {
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;	
+}
+#company #corpInfo h2.ttl {
+	margin-bottom: 5px;
+}
+#company #corpInfo dt {
+	float: none;
+	padding: 20px 10px 5px;
+}
+#company #corpInfo dd {
+	border-bottom: 1px dashed #e4e4e4;
+	padding: 0px 10px 20px;
+} 
+
+
+/* 製品情報
+=============================================== */
+
+
+#products .productsList {
+	margin: 0px;
+	padding: 40px 10px;
+	box-sizing: border-box;
+}
+#products .productsList .title {
+	margin-bottom: 30px;
+}
+
+#products .productsList li {
+	padding: 20px;
+	display: block;
+}
+#products .productsList li figure {
+	display: block;
+	border: none;
+	width: 100%;
+	padding: 20px 0px;
+	text-align: center;
+}
+#products .productsList li figure img {
+	width: 100%;
+	height: auto;
+}
+#products .productsList li .text {
+	display: block;
+	padding: 0px;
+}
+#products .productsList li h3 {
+	text-align: center;
+	font-size: 16px;
+}
+#products .productsList li p {
+	font-size: 12px;
+}
+#products .productsList li p.use {
+	text-align:center;
+}
+#products .productsList li table th {
+	padding: 10px 5px;
+}
+#products .productsList li table td {
+	padding: 10px 5px;
+}
+#products .productsList li .text dl {
+	font-size: 12px;
+	margin: 25px 0px 0px;
+	color: #666;
+}
+#products .productsList li .text dt {
+	clear: both;
+	float: none;
+	width: 100%;
+	border-right: none;
+	font-weight: bold;
+}
+#products .productsList li .text dd {
+	width: 100%;
+	margin-left: 0px;
+	padding-left: 0px;
+} 
+
+#products .productsList li .text dd+dt {
+	margin-top:10px;
+} 
+
+
+/* プライバシーポリシー
+=============================================== */
+
+#factorytour #factorytourWrap {
+	width: 100%;
+	margin: 0px;
+	padding: 10px;
+	height: auto;
+	box-sizing: border-box;
+}
+#factorytour #factorytourWrap figure {
+	margin: 0px 0px 50px;
+	width: 100%;
+}
+#factorytour #factorytourWrap dt {
+	float: none;
+	padding: 20px 10px 5px;
+}
+#factorytour #factorytourWrap dd {
+	border-bottom: 1px d #dotted;
+	padding: 0px 10px 20px;
+} 
+
+
+
+/* プライバシーポリシー
+=============================================== */
+#privacy #privacyWrap {
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+/* トップ
+=============================================== */
+
+#home #visual {
+	height: auto;
+	margin: 0px -20%;
+	width: 140%;
+}
+#home #visual h2 {
+	height: auto;
+	min-width: 100%;
+}
+#home #visual h2 img {
+	margin: 15% 0 0!important;
+	max-width: 60%!important;
+}
+
+
+#home #visual .triangle {
+	display: none;
+}
+#home #storySec .outline {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 10000;
+	top: auto;
+}
+#home #storySec {
+	min-width: 100%;
+	height: auto;
+	padding: 40px 0px;
+}
+#home #storySec h2 {
+	font-size: 21px;
+	margin: 0 0 15px;
+}
+#home #storySec p {
+	display: none;
+}
+#home #storySec .slider {
+	width: 100%;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	
+}
+#home #storySec .storySlider {
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	margin-left: 0px!important;
+}
+#home #storySec .storySlider:before,
+#home #storySec .storySlider:after {
+	display: none;
+}
+#home #maintenanceSec {
+	height: auto;
+	width: 100%;
+	min-width: 100%;
+}
+#home #maintenanceSec h2 {
+	display: none;
+}
+#home #maintenanceSec .triangle {
+	display: none;
+}
+#home #maintenanceSec li p {
+	display: none;
+}
+#home #maintenanceSec ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	border-top: 1px solid #e4e4e4;
+}
+#home #maintenanceSec li {
+	float: none;
+	width: 100%!important;
+	left: auto!important;
+	position: relative;
+	height: auto;
+	border-bottom: 1px solid #e4e4e4;
+}
+#home #maintenanceSec li a {
+	z-index: 3000;
+	position: relative;
+	width: 100%!important;
+	padding: 15px;
+	background: #F7F7F7 url(../../images/home_maintenance_right.png) no-repeat right 12px center!important;
+	background-size: 9px 18px!important;
+}
+#home #maintenanceSec li h3 {
+	font-size: 16px;
+}
+#home #maintenanceSec .left a {
+	text-align: left;
+	top: auto;
+	right: auto;
+}
+#home #maintenanceSec .right a {
+	top: auto;
+	left: auto;
+}
+#home #informationSec {
+	width: 100%;
+	background: url(none);
+}
+#home #informationSec #informationSecInner {
+	overflow: hidden;
+	width: 100%;
+	display: block;
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+#home #informationSec h2 {
+	display: none;
+}
+#home #informationSec dl {
+	width: 100%;
+	display: block;
+	font-size: 13px;
+	margin-bottom:20px;
+}
+#home #informationSec dt {
+	float: none;
+	width: 100%;
+	padding: 0px;
+}
+#home #informationSec dd {
+	padding: 0px;
+	margin: 0px 0px 10px;
+}
+#home #informationSec .more {
+	width: 100%;
+	display: block;
+	text-align: right;
+}
+
+#home #contentsSec li h3:after {
+	display: none;
+}
+#home #contentsSec ul {
+	width: 100%;
+}
+#home #contentsSec li {
+	float: none;
+	width: 100%;
+	display: table;
+}
+#home #contentsSec li figure {
+	overflow: hidden;
+	width: 140px;
+	display: table-cell;
+	margin: 0;
+}
+#home #contentsSec li p {
+	display: none;
+}
+#home #contentsSec li a {
+	padding-bottom: 0px;
+}
+#home #contentsSec li h3 {
+	display: table-cell;
+	margin: 0;
+	vertical-align: middle;
+	font-size: 15px;
+	font-weight: normal;
+	padding-left: 20px;
+}
+#home #contentsSec ul {
+	border-top: 1px solid #e4e4e4;
+}
+#home #contentsSec li {
+	border-bottom: 1px solid #e4e4e4;
+}
+#home #contactSec {
+	overflow: hidden;
+	padding: 40px 20px;
+	height: auto;
+	box-sizing: border-box;
+}
+#home #contactSec address {
+	font-style: normal;
+	width: auto;
+	padding-top: 0px;
+	margin-bottom: 30px;
+	text-align:center;
+}
+#home #contactSecInner {
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+}
+#home #contactSec #banner {
+	position: relative;
+	top: auto;
+	right: auto;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#home #contactSec #banner li {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+#home #contactSec #banner li img{width: 100%; height: auto;}
+#home #contactSec #banner li+li {
+	margin: 0px 0px 0px 2%;
+}
+#gFooter {
+  min-height: auto;
+  margin: 0px auto;
+  width: 100%;
+  padding: 30px 0 0 0;
+}
+#gFooterInner {
+  width: 100%;
+}
+#gFooter #fnav dl {
+  float: none;
+  padding: 0px 20px;
+  width: 100%;
+  height: auto;
+  box-sizing:border-box;
+}
+#gFooter #fnav dd {
+  padding-left: 10px;
+}
+#gFooter #fnav dl+dl {
+  border-left: none;
+}
+#gFooter #copyright {
+  font-size: 10px;
+    padding: 20px 5px;
+}
+
+.titlepage {
+	position: relative;
+	top: 0px; left: 0px;
+	transform: none; -o-transform: none; -webkit-transform: none;
+	font-size: 20px;
+}
+
+body.en #contents #title .title-caption h2, body #contents #title .title-caption h2 {font-size: 30px;}
+.text-absolute {
+	position: relative; top: 0px; left: 0px;
+	transform: none; -o-transform: none; -webkit-transform: none;
+	width: calc(100% - 60px); padding: 30px;
+}
+#story #chapterList.wood-collection li .text h3 {
+    font-size: 20px;
+}
+
+}
